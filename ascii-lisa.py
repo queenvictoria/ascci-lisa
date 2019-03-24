@@ -11,7 +11,7 @@ https://wshanshan.github.io/python/asciiart/
 @TODO
 
 - [v] Read file.
-- [ ] Select bit depth.
+- [v] Select bit depth.
 - [ ] Convert to ascci.
 - [v] Resize file.
 - [ ] Pass in some variables.
@@ -43,4 +43,5 @@ pixels = pixels / pixels.max()
 for row in pixels:
   print()
   for column in row:
-    print (int(round(1-column)), end='')
+    # What base is this?
+    print (int(round(8*column)), end='')
