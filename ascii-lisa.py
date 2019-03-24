@@ -37,4 +37,5 @@ pixels = numpy.asarray(img)
 pixels = numpy.sum(pixels, axis=2)
 
 for row in pixels:
-  print(pixels.size, row.size, pixels.size / row.size, pow(row.size, 2))
+  for column in row:
+    print (column)
