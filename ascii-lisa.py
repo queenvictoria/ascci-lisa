@@ -43,4 +43,4 @@ pixels = pixels / pixels.max()
 for row in pixels:
   print()
   for column in row:
-    print (round(column), ' ', end='')
+    print (int(round(column)), ' ', end='')
