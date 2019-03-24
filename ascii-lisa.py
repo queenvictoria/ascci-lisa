@@ -36,6 +36,10 @@ img = img.resize((100, 100))
 pixels = numpy.asarray(img)
 pixels = numpy.sum(pixels, axis=2)
 
+# If 0 were black and 1 were white. Divide this pixel value by the biggest pixel value.
+# What base is this?
+pixels = pixels / pixels.max()
+
 for row in pixels:
   print()
   for column in row:
