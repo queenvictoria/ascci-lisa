@@ -13,7 +13,7 @@ https://wshanshan.github.io/python/asciiart/
 - [v] Read file.
 - [ ] Select bit depth.
 - [ ] Convert to ascci.
-- [ ] Resize file.
+- [v] Resize file.
 - [ ] Pass in some variables.
 - [ ] Save it out.
 - [ ] How many bits depth should I choose?
@@ -26,6 +26,9 @@ import numpy
 
 # - [ ] Read file.
 img = Image.open("bart.jpg")
+
+# - [ ] Resize file.
+img = img.resize((100, 100))
 
 #Get the RGB color values of each pixel point and convert them to graycolor using the average method from numpy
 # A bunch of pixels in a list.
