@@ -32,3 +32,4 @@ img = Image.open("bart.jpg")
 pixels = numpy.asarray(img)
 
 print(pixels)
+print(pixels.size)
