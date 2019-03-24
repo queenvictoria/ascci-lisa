@@ -28,7 +28,10 @@ import numpy
 img = Image.open("bart.jpg")
 
 # - [ ] Resize file.
-img = img.resize((100, 100))
+letter_ratio = 0.45
+width=512
+height=int(width * letter_ratio)
+img = img.resize((width, height))
 
 #Get the RGB color values of each pixel point and convert them to graycolor using the average method from numpy
 # A bunch of pixels in a list.
@@ -40,7 +43,7 @@ pixels = numpy.sum(pixels, axis=2)
 # What base is this?
 pixels = pixels / pixels.max()
 
-chars = numpy.asarray(list(' .,:is?@'))
+chars = numpy.asarray(list(' .,:is?@9B&#'))
 for row in pixels:
   print()
   for column in row:
