@@ -29,8 +29,9 @@ img = Image.open("bart.jpg")
 
 #Get the RGB color values of each pixel point and convert them to graycolor using the average method from numpy
 # A bunch of pixels in a list.
+# What base are these?
 pixels = numpy.asarray(img)
 pixels = numpy.sum(pixels, axis=2)
 
-for p in pixels:
-  print(pixels[p])
+for row in pixels:
+  print(row.size)
