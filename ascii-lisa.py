@@ -38,4 +38,4 @@ pixels = numpy.sum(pixels, axis=2)
 
 for row in pixels:
   for column in row:
-    print (column)
+    print (column, end='')
