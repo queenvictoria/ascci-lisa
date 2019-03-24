@@ -12,7 +12,7 @@ https://wshanshan.github.io/python/asciiart/
 
 - [v] Read file.
 - [v] Select bit depth.
-- [ ] Convert to ascci.
+- [v] Convert to ascci.
 - [v] Resize file.
 - [ ] Pass in some variables.
 - [ ] Save it out.
@@ -40,8 +40,8 @@ pixels = numpy.sum(pixels, axis=2)
 # What base is this?
 pixels = pixels / pixels.max()
 
+chars = numpy.asarray(list(' .,:is?@'))
 for row in pixels:
   print()
   for column in row:
-    # What base is this?
-    print (int(round(8*column)), end='')
+    print (chars[int(round(chars.size*column-1))], end='')
